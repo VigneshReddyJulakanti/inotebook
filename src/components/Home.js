@@ -1,18 +1,20 @@
-import React ,{useContext} from 'react'
-import noteContext from '../context/notes/notecontext'
+import React from 'react'
+import AddNote from './AddNote'
+import Notes from './Notes'
+
+
 export default function Home() {
 
-    const a=useContext(noteContext);
-    a.update();
+
     return (
-        <div>
-this is {a.state.name} age {a.state.age}
+        <>
+        
+
+        <AddNote/>
 
 
-
-
-            
-            
-        </div>
+       <Notes/>
+       
+        </>
     )
 }
